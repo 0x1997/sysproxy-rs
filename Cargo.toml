@@ -1,7 +1,7 @@
 [package]
 name = "sysproxy"
 version = "0.3.0"
-edition = "2021"
+edition = "2024"
 authors = ["zzzgydi"]
 license = "MIT"
 readme = "README.md"
@@ -21,8 +21,8 @@ xdg = "^2.5"
 interfaces = "0.0.9"
 
 [target.'cfg(target_os = "windows")'.dependencies]
-winreg = { version = "0.52", features = ["transactions"] }
-windows = { version = "0.58", features = [
+winreg = { version = "0.55", features = ["transactions"] }
+windows = { version = "0.61", features = [
     "Win32_Networking_WinInet",
     "Win32_NetworkManagement_Rras",
     "Win32_Foundation",
